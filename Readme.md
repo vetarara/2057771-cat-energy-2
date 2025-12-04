@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Вета Жёлтикова](https://up.htmlacademy.ru/adaptive-individual/2/user/2057771).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
 
 ---
 
