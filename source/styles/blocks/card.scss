@@ -1,0 +1,31 @@
+.card__link {
+  font-family: $secondary-font;
+  font-size: 20px;
+  text-decoration: none;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.card__column {
+  color: $secondary-color;
+}
+
+.card__title {
+  font-family: $secondary-font;
+  font-size: 20px;
+  text-decoration: none;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.card__comment {
+  color: $secondary-color;
+  line-height: 18px;
+}
+
+.card__show-all {
+  line-height: 20px;
+  color: $secondary-color;
+  text-decoration: none;
+  text-transform: uppercase;
+}
