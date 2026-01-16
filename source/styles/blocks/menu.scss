@@ -1,6 +1,28 @@
-.menu__item a {
-  font-size: 18px;
+.menu {
+  list-style-type: none;
+}
+
+.menu__link {
+  display: inline-block;
+  padding: 12px;
+  font-family: $secondary-font;
+  font-size: 20px;
   text-decoration: none;
   color: $primary-color;
   text-transform: uppercase;
+}
+
+.menu__link--current {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: calc(100% - 24px);
+    height: 2px;
+    background-color: $accent-color;
+    bottom: 0;
+    left: 12px;
+  }
 }
