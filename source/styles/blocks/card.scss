@@ -1,31 +1,31 @@
-.card__link {
+.card__title {
+  @include font-params-mobile(16px, 20px);
   font-family: $secondary-font;
-  font-size: 20px;
-  text-decoration: none;
-  color: #222222;
+  font-weight: $base-font-weight;
   text-transform: uppercase;
+}
+
+.card__link {
+  @include link;
+  @include font-params-mobile(16px, 20px);
+  font-family: $secondary-font;
+  color: $secondary-color-dark;
 }
 
 .card__column {
+  @include font-params-mobile(12px, 16px);
   color: $secondary-color;
 }
 
-.card__title {
-  font-family: $secondary-font;
-  font-size: 20px;
-  text-decoration: none;
-  color: #222222;
-  text-transform: uppercase;
+.card__order {
+  @include button;
 }
 
 .card__comment {
+  @include font-params-mobile(12px, 16px);
   color: $secondary-color;
-  line-height: 18px;
 }
 
 .card__show-all {
-  line-height: 20px;
-  color: $secondary-color;
-  text-decoration: none;
-  text-transform: uppercase;
+  @include button-secondary;
 }

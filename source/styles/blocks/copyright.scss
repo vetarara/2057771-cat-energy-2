@@ -1,0 +1,10 @@
+.copyright__link {
+  @include link;
+  @include font-params-mobile(16px, 20px);
+  color: $secondary-color;
+  text-transform: none;
+}
+
+.copyright__text {
+  font-weight: $base-font-weight;
+}

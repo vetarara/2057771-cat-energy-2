@@ -2,12 +2,21 @@
   font-family: $secondary-font;
 }
 
+.hero__container {
+  color: $base-light;
+  background-color: $accent-color;
+}
+
 .hero__title {
-  font-size: 36px;
-  line-height: 36px;
+  @include font-params-mobile(36px, 36px);
+  font-weight: $base-font-weight;
 }
 
 .hero__slogan {
-  font-size: 14px;
-  line-height: 14px;
+  @include font-params-mobile($line-height: 14px);
+  color: $base-light;
+}
+
+.hero__selection {
+  @include button;
 }

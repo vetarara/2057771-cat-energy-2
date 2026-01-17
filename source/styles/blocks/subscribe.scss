@@ -1,0 +1,10 @@
+.subscribe__title {
+  @include font-params-mobile(24px, 24px);
+  font-family: $secondary-font;
+  font-weight: $base-font-weight;
+}
+
+.subscribe__description {
+  @include font-params-mobile(16px, 24px);
+  font-family: $secondary-font;
+}

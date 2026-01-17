@@ -1,12 +1,16 @@
 .extra-card__title {
+  @include font-params-mobile(16px, 16px);
   font-family: $secondary-font;
-  color: #222222;
-  font-size: 20px;
-  line-height: 26px;
+  font-weight: $base-font-weight;
+  color: $secondary-color-dark;
   text-transform: uppercase;
 }
 
 .extra-card__description {
+  @include font-params-mobile($line-height: 14px);
   color: $secondary-color;
-  line-height: 20px;
+}
+
+.extra-card__order {
+  @include button;
 }

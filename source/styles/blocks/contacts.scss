@@ -1,11 +1,16 @@
+.contacts--main {
+  background-color: $base-light;
+}
+
 .contacts__title {
+  @include font-params-mobile(16px, 20px);
   font-family: $secondary-font;
-  font-size: 20px;
-  line-height: 26px;
+  font-weight: $base-font-weight;
   text-transform: uppercase;
 }
 
 .contacts__text {
+  @include font-params-mobile($line-height: 20px);
   color: $secondary-color;
   font-style: normal;
 }
