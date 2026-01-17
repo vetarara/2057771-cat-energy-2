@@ -1,10 +1,11 @@
-.example__title {
-  font-size: 60px;
-  line-height: 60px;
+.example {
+  background-color: $dark-background;
 }
 
-.example__container {
-  background-color: $dark-background;
+.example__title {
+  @include font-params-mobile(36px, 40px);
+  font-family: $secondary-font;
+  font-weight: $base-font-weight;
 }
 
 .example__description {

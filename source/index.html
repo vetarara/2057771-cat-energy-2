@@ -44,14 +44,17 @@
   <main class="page__main main-container">
 
     <section class="hero">
-      <h1 class="hero__title">Функциональное питание для котов</h1>
-      <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <a class="hero__selection button" href="#">Подобрать программу</a>
-      <picture>
-        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
-        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
-        <img class="hero__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Большая банка отличного корма">
-      </picture>
+      <div class="hero__container">
+        <h1 class="hero__title">Функциональное питание для котов</h1>
+        <p class="hero__slogan">Занялся собой? Займись котом!</p>
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
+          <img class="hero__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Большая банка отличного корма">
+        </picture>
+      </div>
+
+      <a class="hero__selection" href="#">Подобрать программу</a>
 
     </section>
 
@@ -89,7 +92,7 @@
           <p class="advantage__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
         <li class="advantages__item advantage advantage--result">
-          <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <p class="advantage__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
     </section>
@@ -136,7 +139,7 @@
 
   <footer class="page__footer main-footer">
 
-    <div class="main-footer__contacts contacts">
+    <div class="main-footer__contacts contacts contacts--main">
       <strong class="contacts__title">Приглашаем к сотрудничеству дилеров!</strong>
       <address class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </div>
@@ -157,13 +160,17 @@
 
       <ul class="main-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы вo Вконтакте</a>
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы вo Вконтакте</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Наш Ютуб-канал</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Наш Ютуб-канал</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграме</span></a>
         </li>
       </ul>
 

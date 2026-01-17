@@ -8,12 +8,35 @@
   }
 }
 
-@mixin base-font-mobile {
-  font-size: 14px;
-  line-height: 18px;
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-@mixin button-font-mobile {
-  font-size: 16px;
-  line-height: 20px;
+@mixin link {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@mixin button {
+  @include link;
+  @include font-params-mobile(16px, 20px);
+  padding: 10px;
+  font-family: $secondary-font;
+  color: $base-light;
+  background-color: $accent-color;
+  border: none;
+}
+
+@mixin button-secondary {
+  @include button;
+  color: $secondary-color;
+  background-color: $dark-background;
+}
+
+@mixin font-params-mobile ($font-size: 14px, $line-height: 18px) {
+  font-size: $font-size;
+  line-height: $line-height;
 }

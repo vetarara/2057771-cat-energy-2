@@ -1,7 +1,6 @@
 .logo {
+  @include link;
+  @include font-params-mobile(18px, 24px);
   font-family: $secondary-font;
-  font-size: 18px;
-  text-decoration: none;
   color: $primary-color;
-  text-transform: uppercase;
 }

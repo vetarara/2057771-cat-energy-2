@@ -1,5 +1,5 @@
 .extra-products__title {
+  @include font-params-mobile(24px, 24px);
   font-family: $secondary-font;
-  font-size: 40px;
-  line-height: 46px;
+  font-weight: $base-font-weight;
 }

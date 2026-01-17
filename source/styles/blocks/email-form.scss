@@ -1,0 +1,15 @@
+.email-form__input {
+  @include font-params-mobile(20px, 20px);
+  margin: 0;
+  padding: 13px;
+  font-family: $secondary-font;
+  text-transform: uppercase;
+}
+
+.email-form__input::placeholder {
+  color: $secondary-color;
+}
+
+.email-form__button {
+  @include button;
+}

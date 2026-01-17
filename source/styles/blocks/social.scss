@@ -1,0 +1,10 @@
+.social {
+  @include list-reset;
+}
+
+.social__link {
+  @include link;
+  @include font-params-mobile(18px, 24px);
+  font-family: $secondary-font;
+  color: $primary-color;
+}

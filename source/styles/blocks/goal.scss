@@ -1,14 +1,22 @@
+.goal {
+  background-color: $dark-background;
+}
+
 .goal__title {
+  @include font-params-mobile(24px, 37px);
   font-family: $secondary-font;
-  font-size: 24px;
-  line-height: 37px;
+  font-weight: $base-font-weight;
   text-transform: uppercase;
 }
 
-.goal__catalog {
-  font-family: $secondary-font;
-  font-size: 20px;
-  line-height: auto;
-  color: $primary-color;
-  text-decoration: none;
+.goal__description {
+  color: $secondary-color;
 }
+
+.goal__catalog {
+  @include link;
+  @include font-params-mobile(16px, 16px);
+  font-family: $secondary-font;
+  color: $primary-color;
+}
+
