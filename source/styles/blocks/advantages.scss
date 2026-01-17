@@ -1,0 +1,9 @@
+.advantages__title {
+  @include font-params-mobile(36px, 40px);
+  font-family: $secondary-font;
+  font-weight: $base-font-weight;
+}
+
+.advantages__list {
+  @include list-reset;
+}

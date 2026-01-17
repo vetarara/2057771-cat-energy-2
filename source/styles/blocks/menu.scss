@@ -1,0 +1,26 @@
+.menu {
+  @include list-reset;
+}
+
+.menu__link {
+  @include link;
+  @include font-params-mobile(20px, 20px);
+  padding: 12px;
+  font-family: $secondary-font;
+  color: $primary-color;
+}
+
+.menu__link--current {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: calc(100% - 24px);
+    height: 2px;
+    background-color: $accent-color;
+    bottom: 0;
+    left: 12px;
+  }
+}

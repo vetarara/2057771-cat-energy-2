@@ -1,0 +1,22 @@
+.detail__value {
+  @include font-params-mobile(24px, 24px);
+  font-family: $secondary-font;
+  text-transform: uppercase;
+}
+
+.detail__value--accent {
+  @include font-params-mobile(14px, 20px);
+}
+
+.detail__key {
+  @include font-params-mobile(12px, 12px);
+  color: $secondary-color;
+  text-transform: lowercase;
+}
+
+.detail__key--accent {
+  @include font-params-mobile(14px, 20px);
+  font-family: $secondary-font;
+  color: $primary-color;
+  text-transform: uppercase;
+}

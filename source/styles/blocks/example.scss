@@ -1,0 +1,13 @@
+.example {
+  background-color: $dark-background;
+}
+
+.example__title {
+  @include font-params-mobile(36px, 40px);
+  font-family: $secondary-font;
+  font-weight: $base-font-weight;
+}
+
+.example__description {
+  color: $secondary-color;
+}

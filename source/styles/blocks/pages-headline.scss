@@ -1,0 +1,5 @@
+.pages-headline {
+  @include font-params-mobile(36px, 36px);
+  font-family: $secondary-font;
+  font-weight: $base-font-weight;
+}

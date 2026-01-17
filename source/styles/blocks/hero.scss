@@ -1,0 +1,22 @@
+.hero {
+  font-family: $secondary-font;
+}
+
+.hero__container {
+  color: $base-light;
+  background-color: $accent-color;
+}
+
+.hero__title {
+  @include font-params-mobile(36px, 36px);
+  font-weight: $base-font-weight;
+}
+
+.hero__slogan {
+  @include font-params-mobile($line-height: 14px);
+  color: $base-light;
+}
+
+.hero__selection {
+  @include button;
+}

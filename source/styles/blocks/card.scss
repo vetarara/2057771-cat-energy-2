@@ -1,0 +1,31 @@
+.card__title {
+  @include font-params-mobile(16px, 20px);
+  font-family: $secondary-font;
+  font-weight: $base-font-weight;
+  text-transform: uppercase;
+}
+
+.card__link {
+  @include link;
+  @include font-params-mobile(16px, 20px);
+  font-family: $secondary-font;
+  color: $secondary-color-dark;
+}
+
+.card__column {
+  @include font-params-mobile(12px, 16px);
+  color: $secondary-color;
+}
+
+.card__order {
+  @include button;
+}
+
+.card__comment {
+  @include font-params-mobile(12px, 16px);
+  color: $secondary-color;
+}
+
+.card__show-all {
+  @include button-secondary;
+}
