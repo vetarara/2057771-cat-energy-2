@@ -1,5 +1,27 @@
 .goal {
+  position: relative;
   background-color: $dark-background;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+}
+
+.goal--slim::before {
+  width: 50px;
+  height: 53px;
+  background-image: url("../../icons/stack.svg#cat-slim");
+  background-repeat: no-repeat;
+}
+
+.goal--pro::before {
+  width: 70px;
+  height: 50px;
+  background-image: url("../../icons/stack.svg#cat-pro");
 }
 
 .goal__title {
@@ -16,7 +38,23 @@
 .goal__catalog {
   @include link;
   @include font-params-mobile(16px, 16px);
+  position: relative;
+  width: 133px;
   font-family: $secondary-font;
   color: $primary-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 8px;
+    display: block;
+    width: 24px;
+    height: 12px;
+    mask-image: url("../../icons/stack.svg#link-arrow");
+    mask-size: 24px 12px;
+    mask-repeat: no-repeat;
+    background-color: $primary-color;
+  }
 }
 
