@@ -18,8 +18,12 @@
   <header class="page__header main-header">
 
     <a class="main-header__logo logo" href="index.html" aria-current="page">
-      <img class="logo__image" src="#" alt="Логотип магазина" width="33" height="38">
-      <img class="logo__text" src="#" alt="Cat Energy" width="101" height="20">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-cat-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-cat-tablet.svg">
+        <img class="logo__image" src="images/logo-cat-mobile.svg" width="33" height="38" alt="Логотип магазина">
+      </picture>
+      <img class="logo__text" src="images/logo-text.svg" lang="en" alt="Cat Energy" width="101" height="18">
     </a>
 
     <nav class="main-nav">
@@ -60,7 +64,7 @@
 
     <section class="goals">
       <h2 class="visually-hidden">Выберите каталог для вашей цели</h2>
-      <div class="goals__item goal">
+      <div class="goals__item goal goal--slim">
         <h3 class="goal__title">Похудение</h3>
         <p class="goal__description">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
@@ -69,7 +73,7 @@
         </p>
       </div>
 
-      <div class="goals__item goal">
+      <div class="goals__item goal goal--pro">
         <h3 class="goal__title">Набор массы</h3>
         <p class="goal__description">
           Заработать авторитет среди дворовых котов и даже собак?
@@ -154,8 +158,8 @@
 
     <div class="main-footer__links">
       <a class="main-footer__logo logo" href="index.html" aria-current="page">
-        <img class="main-footer__logo-image" src="#" width="128" height="24" alt="Кэт энерджи">
-        <span class="visually-hidden">Логотип магазина Cat Energy</span>
+        <span class="visually-hidden">Логотип магазина</span>
+        <img class="logo__text" src="images/logo-text.svg" lang="en" alt="Cat Energy" width="128" height="24">
       </a>
 
       <ul class="main-footer__social social">
@@ -176,9 +180,8 @@
 
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">Логотип разработчика</span>
+          <span class="visually-hidden">Разработка сайта</span>
           <strong class="copyright__text">HTML Academy</strong>
-          <img class="copyright__icon-HTML" src="#" width="33" height="37" alt="HTML Academy">
         </a>
       </div>
     </div>

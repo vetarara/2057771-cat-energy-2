@@ -1,3 +1,40 @@
+.advantage {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $accent-color;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantage--nutrition::before {
+  background-image: url("../../icons/stack.svg#leaf");
+  background-size: 30px 32px;
+}
+
+.advantage--convenience::before {
+  background-image: url("../../icons/stack.svg#powder");
+  background-size: 26px 29px;
+}
+
+.advantage--economy::before {
+  background-image: url("../../icons/stack.svg#cutlery");
+  background-size: 25px 30px;
+}
+
+.advantage--result::before {
+  background-image: url("../../icons/stack.svg#time");
+  background-size: 26px 31px;
+}
+
 .advantage__description {
   color: $secondary-color;
 }
