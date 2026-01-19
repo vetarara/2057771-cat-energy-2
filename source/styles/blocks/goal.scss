@@ -1,12 +1,13 @@
 .goal {
+  padding: 20px 20px 18px;
   position: relative;
   background-color: $dark-background;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 20px;
+    left: 20px;
     display: block;
   }
 }
@@ -19,6 +20,7 @@
 }
 
 .goal--pro::before {
+  left: 10px;
   width: 70px;
   height: 50px;
   background-image: url("../../icons/stack.svg#cat-pro");
@@ -26,6 +28,7 @@
 
 .goal__title {
   @include font-params-mobile(24px, 37px);
+  margin: 0 0 29px 70px;
   font-family: $secondary-font;
   font-weight: $base-font-weight;
   text-transform: uppercase;
@@ -33,6 +36,10 @@
 
 .goal__description {
   color: $secondary-color;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-bottom: 23px;
+  border-bottom: 2px solid #d9d9d9;
 }
 
 .goal__catalog {

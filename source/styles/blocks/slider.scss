@@ -1,13 +1,15 @@
 .slider {
-  height: 256px;
+  position: relative;
 }
 
 .slider__curtain {
-  position: relative;
+  position: absolute;
+  top: 0;
+  bottom: 0;
   width: 4px;
   height: 100%;
   padding: 0;
-  background-color: #666666;
+  background-color: $mask-background-color;
   border: none;
   border-radius: 2px;
   cursor: pointer;
@@ -22,7 +24,7 @@
     width: 40px;
     height: 40px;
     background-color: $base-light;
-    border: 2px solid #666666;
+    border: 2px solid $mask-background-color;
     border-radius: 50%;
   }
 
@@ -35,7 +37,7 @@
     display: block;
     width: 24px;
     height: 18px;
-    background-color: #666666;
+    background-color: $mask-background-color;
     mask-image: url("../../icons/stack.svg#slider-arrows");
     mask-size: 24px 18px;
     mask-repeat: no-repeat;

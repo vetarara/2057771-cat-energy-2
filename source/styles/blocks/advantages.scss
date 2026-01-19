@@ -1,9 +1,17 @@
+.advantages {
+  padding: 0 20px 49px;
+}
+
 .advantages__title {
   @include font-params-mobile(36px, 40px);
+  margin: 0 0 40px;
   font-family: $secondary-font;
   font-weight: $base-font-weight;
 }
 
 .advantages__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

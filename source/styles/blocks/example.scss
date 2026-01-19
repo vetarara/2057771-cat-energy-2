@@ -1,9 +1,11 @@
 .example {
+  padding: 25px 20px 40px;
   background-color: $dark-background;
 }
 
 .example__title {
   @include font-params-mobile(36px, 40px);
+  margin: 0 0 40px;
   font-family: $secondary-font;
   font-weight: $base-font-weight;
 }
