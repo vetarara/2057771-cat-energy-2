@@ -1,8 +1,40 @@
+.copyright {
+  width: 100%;
+}
+
 .copyright__link {
   @include link;
   @include font-params-mobile(16px, 20px);
+  position: relative;
+  width: 100%;
+  padding: 8px;
   color: $secondary-color;
   text-transform: none;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    position: absolute;
+    top: -50%;
+    right: 0;
+    transform: translateY(50%);
+    background-color: $mask-background-color;
+    background-repeat: no-repeat;
+    mask-image: url("../../icons/stack.svg#logo-html");
+    mask-size: 27px 34px;
+    mask-repeat: no-repeat;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $accent-color;
+  }
+
+  &:active::before {
+    opacity: 0.6;
+  }
 }
 
 .copyright__text {

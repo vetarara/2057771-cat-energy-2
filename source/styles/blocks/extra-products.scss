@@ -1,3 +1,9 @@
+.extra-products {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
 .extra-products__title {
   @include font-params-mobile(24px, 24px);
   font-family: $secondary-font;

@@ -1,0 +1,21 @@
+.main-nav__toggle {
+  @include link;
+  width: 24px;
+  height: 16px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../icons/stack.svg#burger-button");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-nav__toggle--close {
+  @include link;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../icons/stack.svg#close");
+  background-repeat: no-repeat;
+  background-position: center;
+}

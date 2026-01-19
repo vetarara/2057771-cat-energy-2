@@ -1,8 +1,12 @@
 .hero {
   font-family: $secondary-font;
+  text-align: center;
 }
 
 .hero__container {
+  position: relative;
+  margin-bottom: 138px;
+  padding: 20px 35px 164px;
   color: $base-light;
   background-color: $accent-color;
 }
@@ -15,6 +19,14 @@
 .hero__slogan {
   @include font-params-mobile($line-height: 14px);
   color: $base-light;
+  text-transform: uppercase;
+}
+
+.hero__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .hero__selection {
