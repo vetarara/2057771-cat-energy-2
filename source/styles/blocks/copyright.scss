@@ -17,9 +17,9 @@
     width: 27px;
     height: 34px;
     position: absolute;
-    top: -50%;
+    top: 50%;
     right: 0;
-    transform: translateY(50%);
+    transform: translateY(-50%);
     background-color: $mask-background-color;
     background-repeat: no-repeat;
     mask-image: url("../../icons/stack.svg#logo-html");
@@ -27,12 +27,18 @@
     mask-repeat: no-repeat;
   }
 
-  &:hover::before,
-  &:focus::before {
+  &:hover,
+  &:focus, {
+    color: $accent-color;
+  }
+
+  &:hover::after,
+  &:focus::after {
     background-color: $accent-color;
   }
 
-  &:active::before {
+  &:active,
+  &:active::after {
     opacity: 0.6;
   }
 }
