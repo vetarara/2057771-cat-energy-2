@@ -1,4 +1,5 @@
 .extra-products {
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -6,6 +7,9 @@
 
 .extra-products__title {
   @include font-params-mobile(24px, 24px);
+  margin: 0;
+  padding-bottom: 36px;
   font-family: $secondary-font;
   font-weight: $base-font-weight;
+  border-bottom: 1px solid #d9d9d9;
 }

@@ -1,5 +1,10 @@
+.subscribe {
+  padding: 20px;
+}
+
 .subscribe__title {
   @include font-params-mobile(24px, 24px);
+  margin: 0;
   font-family: $secondary-font;
   font-weight: $base-font-weight;
 }
