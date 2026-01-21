@@ -26,7 +26,7 @@
   }
 
   &:hover::before,
-  &:focus::before {
+  &:focus-visible::before {
     background-color: $accent-color;
   }
 

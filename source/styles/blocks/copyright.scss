@@ -27,13 +27,8 @@
     mask-repeat: no-repeat;
   }
 
-  &:hover,
-  &:focus, {
-    color: $accent-color;
-  }
-
   &:hover::after,
-  &:focus::after {
+  &:focus-visible::after {
     background-color: $accent-color;
   }
 
