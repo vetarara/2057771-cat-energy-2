@@ -1,6 +1,11 @@
 .goals {
-  margin: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+  }
 }

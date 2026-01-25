@@ -10,6 +10,10 @@
     left: 20px;
     display: block;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 52px 53px;
+  }
 }
 
 .goal--slim::before {
@@ -17,6 +21,14 @@
   height: 53px;
   background-image: url("../../icons/stack.svg#cat-slim");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 81px;
+    right: 63px;
+    left: auto;
+    width: 200px;
+    height: 211px;
+  }
 }
 
 .goal--pro::before {
@@ -24,6 +36,14 @@
   width: 70px;
   height: 50px;
   background-image: url("../../icons/stack.svg#cat-pro");
+
+  @media (min-width: $tablet-width) {
+    top: 91px;
+    right: 29px;
+    left: auto;
+    width: 268px;
+    height: 200px;
+  }
 }
 
 .goal__title {
@@ -32,6 +52,11 @@
   font-family: $secondary-font;
   font-weight: $base-font-weight;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-params-tablet(36px, 36px);
+    margin: 0 0 24px;
+  }
 }
 
 .goal__description {
@@ -40,13 +65,20 @@
   margin-bottom: 15px;
   padding-bottom: 23px;
   border-bottom: 2px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+    padding: 0;
+    max-width: 45vw;
+    border: none;
+  }
 }
 
 .goal__catalog {
   @include link;
   @include font-params-mobile(16px, 16px);
   position: relative;
-  width: 133px;
+  padding-right: 47px;
   font-family: $secondary-font;
   color: $primary-color;
 
@@ -62,5 +94,14 @@
     mask-size: 24px 12px;
     mask-repeat: no-repeat;
     background-color: $primary-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font-params-tablet(20px, 20px);
+    padding-right: 57px;
+
+    &::after {
+      top: 5px;
+    }
   }
 }

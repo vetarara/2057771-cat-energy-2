@@ -1,6 +1,6 @@
 .example {
   padding: 25px 20px 40px;
-  background-color: $dark-background;
+  background-color: #eaeaea;
 }
 
 .example__title {
@@ -11,5 +11,6 @@
 }
 
 .example__description {
+  margin: 0 0 20px;
   color: $secondary-color;
 }

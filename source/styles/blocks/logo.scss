@@ -1,6 +1,19 @@
 .logo {
   @include link;
   @include font-params-mobile(18px, 24px);
+  width: 65vw;
+  padding: 13px 20px;
   font-family: $secondary-font;
   color: $primary-color;
+}
+
+.logo__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo__text--footer {
+  position: static;
 }

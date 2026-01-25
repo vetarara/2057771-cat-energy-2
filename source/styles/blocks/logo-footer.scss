@@ -1,0 +1,10 @@
+.logo-footer {
+  @include link;
+  @include font-params-mobile(18px, 24px);
+  width: 100%;
+  padding: 0 0 20px;
+  font-family: $secondary-font;
+  color: $primary-color;
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+}

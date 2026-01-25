@@ -1,5 +1,6 @@
 .advantage {
   position: relative;
+  min-height: 60px;
 
   &::before {
     content: "";
@@ -12,6 +13,28 @@
     background-color: $accent-color;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+
+    &::before {
+      top: 40;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      @include font-params-tablet(280px, 280px);
+      content: counter(item);
+      counter-increment: item;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      font-family: $secondary-font;
+      color: $dark-background;
+    }
   }
 }
 
@@ -38,4 +61,8 @@
 .advantage__description {
   padding-left: 80px;
   color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 151px 0 0;
+  }
 }

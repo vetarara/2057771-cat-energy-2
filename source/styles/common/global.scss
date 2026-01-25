@@ -18,4 +18,8 @@ body {
   font-family: $primary-font;
   color: $primary-color;
   background-color: $base-light;
+
+  @media (min-width: $tablet-width) {
+    @include font-params-tablet;
+  }
 }
