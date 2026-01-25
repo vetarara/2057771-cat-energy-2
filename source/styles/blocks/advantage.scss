@@ -37,6 +37,14 @@
       color: $dark-background;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 230px;
+
+    &::after {
+      right: 0;
+    }
+  }
 }
 
 .advantage--nutrition::before {
@@ -65,5 +73,9 @@
 
   @media (min-width: $tablet-width) {
     padding: 151px 79px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 151px 0 0;
   }
 }
