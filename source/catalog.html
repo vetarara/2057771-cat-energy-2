@@ -26,8 +26,8 @@
       <img class="logo__text" src="images/logo-text.svg" lang="en" alt="Cat Energy" width="101" height="18">
     </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--close" type="button">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list menu">
@@ -344,7 +344,10 @@
 
     <div class="main-footer__contacts contacts">
       <strong class="contacts__title">Приглашаем к сотрудничеству дилеров!</strong>
-      <address class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <address class="contacts__text">
+        <span class="contacts__text-street">ул. Большая<br>Конюшенная, д. 19/8</span>
+        <span class="contacts__text-city">Санкт-Петербург</span>
+      </address>
     </div>
 
     <div class="main-footer__map map">
@@ -356,9 +359,9 @@
     </div>
 
     <div class="main-footer__links">
-      <a class="main-footer__logo logo" href="index.html">
+      <a class="main-footer__logo logo-footer" href="index.html">
         <span class="visually-hidden">Логотип магазина</span>
-        <img class="logo__text" src="images/logo-text.svg" lang="en" alt="Cat Energy" width="128" height="24">
+        <img class="logo-footer__text" src="images/logo-text.svg" lang="en" alt="Cat Energy" width="128" height="24">
       </a>
 
       <ul class="main-footer__social social">

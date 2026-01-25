@@ -1,3 +1,11 @@
 .main-header {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
