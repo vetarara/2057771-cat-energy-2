@@ -8,4 +8,9 @@
     flex-wrap: wrap;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1220px;
+  }
 }
