@@ -17,6 +17,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 280px;
+    min-width: 324px;
 
     &::before {
       top: 40;
@@ -30,7 +31,7 @@
       counter-increment: item;
       position: absolute;
       top: 0;
-      right: 0;
+      right: 79px;
       z-index: -1;
       font-family: $secondary-font;
       color: $dark-background;
@@ -63,6 +64,6 @@
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
-    padding: 151px 0 0;
+    padding: 151px 79px 0 0;
   }
 }

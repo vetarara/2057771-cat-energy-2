@@ -5,6 +5,14 @@
   padding: 13px 20px;
   font-family: $secondary-font;
   color: $primary-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 12px 10px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
 }
 
 .logo__text {
@@ -12,6 +20,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    transform: none;
+  }
 }
 
 .logo__text--footer {

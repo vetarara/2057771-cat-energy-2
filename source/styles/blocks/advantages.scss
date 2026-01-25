@@ -21,14 +21,14 @@
 .advantages__list {
   @include list-reset;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   gap: 20px;
   counter-reset: item;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 245px);
-    gap: 37px 137px;
+    grid-template-columns: repeat(2, minmax(324px, 1fr));
+    gap: 37px 58px;
   }
 }
 

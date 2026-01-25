@@ -1,7 +1,13 @@
 .menu {
   @include list-reset;
   text-align: center;
-  display: none;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+  }
 }
 
 .menu__link {
@@ -15,6 +21,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 12px;
+    border: none;
   }
 }
 
