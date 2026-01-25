@@ -1,26 +1,37 @@
 .menu {
   @include list-reset;
+  text-align: center;
+  display: none;
 }
 
 .menu__link {
   @include link;
   @include font-params-mobile(20px, 20px);
-  padding: 12px;
+  width: 100%;
+  padding: 22px;
+  border-bottom: 1px solid #e6e6e6;
   font-family: $secondary-font;
   color: $primary-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px;
+  }
 }
 
 .menu__link--current {
-  position: relative;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 12px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: calc(100% - 24px);
-    height: 2px;
-    background-color: $accent-color;
-    bottom: 0;
-    left: 12px;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: calc(100% - 24px);
+      height: 2px;
+      background-color: $accent-color;
+      bottom: 0;
+      left: 12px;
+    }
   }
 }

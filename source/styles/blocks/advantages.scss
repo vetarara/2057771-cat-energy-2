@@ -1,5 +1,9 @@
 .advantages {
   padding: 0 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 30px 47px;
+  }
 }
 
 .advantages__title {
@@ -14,4 +18,15 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  counter-reset: item;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 245px);
+    gap: 37px 137px;
+  }
+}
+
+.advantage__description {
+  margin: 0;
 }

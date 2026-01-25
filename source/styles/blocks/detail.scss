@@ -1,21 +1,49 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail--accent {
+  margin: 0 auto;
+  grid-column: 1 / 3;
+  flex-direction: row;
+}
+
 .detail__value {
   @include font-params-mobile(24px, 24px);
+  min-width: 124px;
+  padding: 14px;
   font-family: $secondary-font;
   text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
 }
 
 .detail__value--accent {
   @include font-params-mobile(14px, 20px);
+  min-width: fit-content;
+  padding: 0;
+  border: none;
 }
 
 .detail__key {
   @include font-params-mobile(12px, 12px);
+  width: min-content;
+  margin: -9px auto 0;
+  padding: 0 15px;
   color: $secondary-color;
+  background-color: #eaeaea;
   text-transform: lowercase;
+  text-align: center;
 }
 
 .detail__key--accent {
   @include font-params-mobile(14px, 20px);
+  order: -1;
+  width: fit-content;
+  margin: 0;
+  padding: 0 4px 0 0;
   font-family: $secondary-font;
   color: $primary-color;
   text-transform: uppercase;

@@ -1,21 +1,24 @@
+.main-nav {
+  position: absolute;
+  top: 13px;
+  right: 21px;
+}
+
 .main-nav__toggle {
   @include link;
-  width: 24px;
-  height: 16px;
+  width: 40px;
+  height: 40px;
   border: none;
   background-color: transparent;
-  background-image: url("../../icons/stack.svg#burger-button");
+  background-size: 24px 24px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.main-nav__toggle--close {
-  @include link;
-  width: 18px;
-  height: 18px;
-  border: none;
-  background-color: transparent;
+.main-nav__toggle--closed {
+  background-image: url("../../icons/stack.svg#burger-button");
+}
+
+.main-nav__toggle--opened {
   background-image: url("../../icons/stack.svg#close");
-  background-repeat: no-repeat;
-  background-position: center;
 }
