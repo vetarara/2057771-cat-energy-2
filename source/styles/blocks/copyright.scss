@@ -1,5 +1,10 @@
 .copyright {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 168px;
+    align-self: self-end;
+  }
 }
 
 .copyright__link {

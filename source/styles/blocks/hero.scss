@@ -2,22 +2,29 @@
   font-family: $secondary-font;
   display: grid;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: auto auto 1fr 135px auto;
+  grid-template-rows: auto auto 1fr 138px auto;
   position: relative;
   color: $base-light;
   text-align: center;
 
-  &::before {
-    // фоновое изображение
-    content: "";
-    display: block;
-    width: 100%;
-    height: auto;
-    grid-column: 1 / 4;
-    grid-row: 1 / 4;
-    background-color: $accent-color;
-    z-index: -2;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-rows: repeat(3, auto) 1fr;
+    color: $primary-color;
+    text-align: start;
   }
+
+  // фоновое изображение
+  // &::before {
+  // content: "";
+  // display: block;
+  // width: 100%;
+  // height: auto;
+  // grid-column: 1 / 4;
+  // grid-row: 1 / 4;
+  // background-color: $accent-color;
+  // z-index: -2;
+  // }
 
   // фоновый цвет
   &::after {
@@ -29,6 +36,10 @@
     grid-row: 1 / 4;
     background-color: $accent-color;
     z-index: -3;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
   }
 }
 
@@ -38,6 +49,13 @@
   grid-row: 1 / 2;
   margin: 27px 0 25px;
   font-weight: $base-font-weight;
+  background-color: $accent-color;
+
+  @media (min-width: $tablet-width) {
+    @include font-params-tablet(60px, 60px);
+    margin: 65px 0 40px 90px;
+    background-color: transparent;
+  }
 }
 
 .hero__slogan {
@@ -45,18 +63,35 @@
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   margin: 0 0 29px;
-  color: $base-light;
   background-color: $accent-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-params-tablet(20px, 20px);
+    margin: 0 0 21px 90px;
+    background-color: transparent;
+  }
 }
 
 .hero__image-wrapper {
   grid-column: 2 / 3;
   grid-row: 3 / 5;
+
+  @media (min-width: $tablet-width) {
+    place-self: center end;
+  }
 }
 
 .hero__selection {
   @include button;
   grid-column: 2 / 3;
   grid-row: 5 / 6;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 3 / 4;
+    margin: 29px 0 0 90px;
+    width: fit-content;
+    padding: 14px 26px;
+    text-align: center;
+  }
 }

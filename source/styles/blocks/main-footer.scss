@@ -8,4 +8,9 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+  }
 }

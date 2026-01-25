@@ -1,6 +1,11 @@
 .example {
   padding: 25px 20px 40px;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 101px;
+    background-color: $base-light;
+  }
 }
 
 .example__title {

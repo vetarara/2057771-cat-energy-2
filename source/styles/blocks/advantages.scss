@@ -2,7 +2,8 @@
   padding: 0 20px 49px;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 30px 47px;
+    padding: 45px 30px 47px;
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 
@@ -11,6 +12,10 @@
   margin: 0 0 40px;
   font-family: $secondary-font;
   font-weight: $base-font-weight;
+
+  @media (min-width: $tablet-width) {
+    @include font-params-mobile(60px, 60px);
+  }
 }
 
 .advantages__list {
