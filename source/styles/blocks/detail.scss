@@ -14,6 +14,12 @@
     align-items: end;
     gap: 9px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 3;
+    width: 100%;
+    flex-direction: row;
+  }
 }
 
 .detail__value {
@@ -60,6 +66,10 @@
     padding: 0 10px;
     background-color: $base-light;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .detail__key--accent {
@@ -74,5 +84,9 @@
 
   @media (min-width: $tablet-width) {
     @include font-params-mobile(20px, 20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 63px 0 0;
   }
 }

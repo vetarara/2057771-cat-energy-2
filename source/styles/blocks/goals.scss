@@ -9,4 +9,10 @@
     padding: 0 30px;
     gap: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1220px;
+    flex-direction: row;
+  }
 }
