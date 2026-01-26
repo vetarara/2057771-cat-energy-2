@@ -2,7 +2,12 @@
   @include font-params-mobile(36px, 36px);
   margin: 0;
   padding: 27px 20px 41px;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
   font-family: $secondary-font;
   font-weight: $base-font-weight;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 30px 84px;
+    border: none;
+  }
 }

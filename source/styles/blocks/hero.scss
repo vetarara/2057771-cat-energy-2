@@ -22,7 +22,6 @@
   // height: auto;
   // grid-column: 1 / 4;
   // grid-row: 1 / 4;
-  // background-color: $accent-color;
   // z-index: -2;
   // }
 
@@ -93,5 +92,9 @@
     width: fit-content;
     padding: 14px 26px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-params-tablet(20px, 26px);
   }
 }

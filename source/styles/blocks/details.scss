@@ -9,4 +9,11 @@
     gap: 43px;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 42px 55px;
+    padding-right: 70px;
+  }
 }
