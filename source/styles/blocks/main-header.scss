@@ -5,8 +5,7 @@
     margin-right: 30px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
   }
 
   @media (min-width: $desktop-width) {

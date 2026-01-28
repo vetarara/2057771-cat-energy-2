@@ -3,8 +3,10 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-right: 3px;
+    margin: 25px 3px 25px 30px;
+    max-width: 500px;
     display: flex;
+    justify-content: end;
     flex-wrap: wrap;
     gap: 9px;
   }
