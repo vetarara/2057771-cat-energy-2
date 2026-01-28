@@ -2,7 +2,7 @@
   font-family: $secondary-font;
   display: grid;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: auto auto 1fr 138px auto;
+  grid-template-rows: auto 1fr 138px auto;
   position: relative;
   color: $base-light;
   text-align: center;
@@ -42,33 +42,35 @@
   }
 }
 
-.hero__title {
-  @include font-params-mobile(36px, 36px);
+.hero__wrapper {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  background-color: $accent-color;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.hero__title {
+  @include font-params-mobile(36px, 36px);
   margin: 27px 0 25px;
   font-weight: $base-font-weight;
-  background-color: $accent-color;
 
   @media (min-width: $tablet-width) {
     @include font-params-tablet(60px, 60px);
     margin: 65px 0 40px 90px;
-    background-color: transparent;
   }
 }
 
 .hero__slogan {
   @include font-params-mobile($line-height: 14px);
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
   margin: 0 0 29px;
-  background-color: $accent-color;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     @include font-params-tablet(20px, 20px);
     margin: 0 0 21px 90px;
-    background-color: transparent;
   }
 }
 
