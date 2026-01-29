@@ -1,5 +1,13 @@
 .subscribe {
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 68px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 96px 0 104px;
+  }
 }
 
 .subscribe__title {
@@ -7,6 +15,11 @@
   margin: 0 0 32px;
   font-family: $secondary-font;
   font-weight: $base-font-weight;
+
+  @media (min-width: $tablet-width) {
+    @include font-params-tablet(32px, 32px);
+    margin-bottom: 66px;
+  }
 }
 
 .subscribe__description {
@@ -14,4 +27,15 @@
   margin: 0 0 24px;
   font-family: $secondary-font;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font-params-tablet(24px, 32px);
+  }
+}
+
+.subscribe__form {
+  @media (min-width: $desktop-width) {
+    max-width: 752px;
+    margin: 0 auto;
+  }
 }
