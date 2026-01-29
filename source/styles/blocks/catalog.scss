@@ -1,1 +1,6 @@
-
+ul.catalog__list {
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}

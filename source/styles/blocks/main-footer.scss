@@ -3,7 +3,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-rows: 95px 1fr 106px 1fr;
+    grid-template-rows: 95px 1fr 106px auto;
     grid-template-columns: 1fr 565px 655px 1fr;
   }
 }

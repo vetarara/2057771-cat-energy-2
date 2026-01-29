@@ -2,21 +2,37 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 0;
+  }
 }
 
 .email-form__input {
   @include font-params-mobile(20px, 20px);
   margin: 0;
-  padding: 13px;
+  padding: 12px;
   font-family: $secondary-font;
   text-transform: uppercase;
-}
+  border: 1px solid #cdcdcd;
 
-.email-form__input::placeholder {
-  color: $secondary-color;
+  &::placeholder {
+    color: $secondary-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }
 
 .email-form__button {
   @include button;
+  @include font-params-mobile(20px, 26px);
   padding: 15px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 256px;
+    padding: 15px 69px;
+  }
 }

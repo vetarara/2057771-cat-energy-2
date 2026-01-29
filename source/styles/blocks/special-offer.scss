@@ -1,6 +1,12 @@
 .special-offer {
   @include font-params-mobile(16px, 20px);
   position: relative;
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: end;
   padding: 186px 60px 43px 58px;
   background-color: $accent-color;
   color: $base-light;
@@ -18,4 +24,39 @@
     background-image: url("../../icons/stack.svg#gift");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    padding: 70px 125px;
+    justify-content: center;
+    align-items: end;
+    text-align: start;
+
+    &::before {
+      top: 50%;
+      left: 77px;
+      transform: translateY(-50%);
+      width: 80px;
+      height: 83px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 42px 43px;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+
+    &::before {
+      top: 56px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 83px;
+    }
+  }
+}
+
+.special-offer__description {
+  margin: 0;
 }
