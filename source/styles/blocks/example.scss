@@ -56,6 +56,8 @@
 }
 
 .example__details {
+  margin: 0 0 20px;
+
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
   }

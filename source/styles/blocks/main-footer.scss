@@ -23,6 +23,19 @@
   }
 }
 
+.main-footer__logo {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: fit-content;
+  }
+}
+
+.main-footer__social {
+  @include list-reset;
+  width: 100%;
+}
+
 .main-footer__links {
   padding: 40px 20px;
   display: flex;
@@ -42,3 +55,12 @@
     justify-self: center;
   }
 }
+
+.main-footer__copyright {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 168px;
+  }
+}
+
