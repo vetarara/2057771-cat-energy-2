@@ -11,6 +11,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    flex-flow: row wrap;
+  }
+}
+
+.goals__item {
+  @media (min-width: $desktop-width) {
+    max-width: calc(50% - 15px);
   }
 }
