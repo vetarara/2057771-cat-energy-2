@@ -1,11 +1,3 @@
-.copyright {
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    max-width: 168px;
-  }
-}
-
 .copyright__link {
   @include link;
   @include font-params-mobile(16px, 20px);

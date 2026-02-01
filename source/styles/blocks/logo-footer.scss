@@ -1,7 +1,6 @@
 .logo-footer {
   @include link;
   @include font-params-mobile(18px, 24px);
-  width: 100%;
   padding: 0 0 20px;
   font-family: $secondary-font;
   color: $primary-color;
@@ -9,7 +8,6 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    max-width: fit-content;
     padding: 0;
     text-align: start;
     border: none;

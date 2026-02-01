@@ -1,5 +1,4 @@
 .details {
-  margin: 0 0 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 32px;
@@ -15,5 +14,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 42px 55px;
     padding-right: 70px;
+  }
+}
+
+.details__item--accent {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 auto;
   }
 }
