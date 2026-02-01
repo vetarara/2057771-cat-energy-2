@@ -44,10 +44,6 @@
   }
 }
 
-.card__img {
-  max-height: 210px;
-}
-
 .card__title {
   @include font-params-mobile(16px, 20px);
   max-width: 55%;
