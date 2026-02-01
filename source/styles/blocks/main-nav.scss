@@ -1,12 +1,4 @@
-
 @media (max-width: $mobile-width-only) {
-  .main-nav {
-    position: absolute;
-    z-index: 2;
-    top: 13px;
-    right: 21px;
-  }
-
   .main-nav__toggle {
     @include link;
     width: 40px;
