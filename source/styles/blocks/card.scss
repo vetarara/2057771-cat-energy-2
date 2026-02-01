@@ -54,7 +54,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-params-tablet($font-size: 20px);
-    margin: 0 auto;
+    margin: 0 auto auto;
     max-width: 42%;
     text-align: center;
   }
