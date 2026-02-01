@@ -1,1 +1,29 @@
+.page__header {
+  position: relative;
 
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1220px;
+  }
+}
+
+.page__goals {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
+
+.page__advantages {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
+
+.page__catalog-container {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}

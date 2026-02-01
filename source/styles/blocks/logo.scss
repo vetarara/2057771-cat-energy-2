@@ -1,14 +1,11 @@
 .logo {
   @include link;
   @include font-params-mobile(18px, 24px);
-  width: 65vw;
   padding: 13px 20px;
   font-family: $secondary-font;
   color: $primary-color;
 
   @media (min-width: $tablet-width) {
-    margin: 12px 10px;
-    width: fit-content;
     display: flex;
     align-items: center;
     gap: 13px;

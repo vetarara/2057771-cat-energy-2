@@ -1,6 +1,4 @@
 .main-header {
-  position: relative;
-
   @media (min-width: $tablet-width) {
     padding-right: 30px;
     display: flex;
@@ -9,7 +7,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
-    max-width: 1220px;
+    padding-right: 0;
   }
 }
+
+.main-header__logo {
+  width: 65vw;
+
+  @media (min-width: $tablet-width) {
+    margin: 12px 10px;
+    width: fit-content;
+  }
+}
+
+.main-header__nav {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    z-index: 2;
+    top: 13px;
+    right: 21px;
+  }
+}
+
