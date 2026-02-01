@@ -30,24 +30,12 @@
 .extra-card__description {
   @include font-params-mobile($line-height: 14px);
   margin-bottom: 15px;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
-  }
-
-  @media (min-width: $desktop-width) {
-    table-layout: fixed;
-    border-collapse: collapse;
-  }
-}
-
-.extra-card__column {
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
     gap: 50px;
     justify-content: end;
   }
@@ -59,14 +47,7 @@
 
 .extra-card__price {
   @media (min-width: $desktop-width) {
-    width: 70px;
-    text-align: left;
-  }
-}
-
-.extra-card__quantity {
-  @media (min-width: $desktop-width) {
-    text-align: left;
+    min-width: 50px;
   }
 }
 
@@ -81,5 +62,6 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;
+    margin-left: 20px;
   }
 }
