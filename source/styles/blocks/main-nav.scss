@@ -52,4 +52,8 @@
     margin: 25px 3px 25px 0;
     max-width: 500px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
