@@ -19,16 +19,42 @@
 
 .extra-products__title {
   @include font-params-mobile(24px, 24px);
+  position: relative;
   margin: 0 0 1px;
+  width: fit-content;
   font-family: $secondary-font;
   font-weight: $base-font-weight;
+  background-color: $base-light;
+  box-shadow:
+    -20px 0 0 0 $base-light,
+    40px 0 0 0 $base-light;
 
   @media (min-width: $tablet-width) {
     @include font-params-tablet(32px, 32px);
+    padding-left: 40px;
+    box-shadow:
+      0 0 0 0 $base-light,
+      40px 0 0 0 $base-light;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 3;
+    padding-left: 0;
+    box-shadow:
+      -40px 0 0 0 $base-light,
+      40px 0 0 0 $base-light;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100vw;
+    height: 2px;
+    background-color: $accent-color;
+    box-shadow: 100vw 0 0 0 $accent-color;
+    z-index: -1;
   }
 }
 
