@@ -7,9 +7,18 @@
   align-items: center;
   justify-content: end;
   padding: 186px 60px 43px 58px;
-  background-color: $accent-color;
   color: $base-light;
   text-align: center;
+  background:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(url("../../images/background/cat-special-mobile@2x.webp") type("image/webp") 2x,
+    url("../../images/background/cat-special-mobile@1x.webp") type("image/webp") 1x,
+    url("../../images/background/cat-special-mobile@2x.jpg") type("image/jpg") 2x,
+    url("../../images/background/cat-special-mobile@1x.jpg") type("image/jpg") 1x);
+  background-color: #858585;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
 
   &::before {
     content: "";
@@ -29,6 +38,16 @@
     justify-content: center;
     align-items: end;
     text-align: start;
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(url("../../images/background/cat-special-tablet@2x.webp") type("image/webp") 2x,
+      url("../../images/background/cat-special-tablet@1x.webp") type("image/webp") 1x,
+      url("../../images/background/cat-special-tablet@2x.jpg") type("image/jpg") 2x,
+      url("../../images/background/cat-special-tablet@1x.jpg") type("image/jpg") 1x);
+    background-color: #858585;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
 
     &::before {
       top: 50%;
@@ -44,6 +63,16 @@
     justify-content: end;
     align-items: center;
     text-align: center;
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(url("../../images/background/cat-special-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/background/cat-special-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/background/cat-special-mobile@2x.jpg") type("image/jpg") 2x,
+      url("../../images/background/cat-special-mobile@1x.jpg") type("image/jpg") 1x);
+    background-color: #858585;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
 
     &::before {
       top: 56px;
