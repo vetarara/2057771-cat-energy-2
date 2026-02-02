@@ -28,12 +28,28 @@
   color: $base-light;
   background-color: $accent-color;
   border: none;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @mixin button-secondary {
   @include button;
   color: $secondary-color;
   background-color: $dark-background;
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    background-color: #ebebeb;
+    color: $secondary-color;
+  }
 }
 
 @mixin font-params-mobile ($font-size: 14px, $line-height: 18px) {
