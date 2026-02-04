@@ -41,6 +41,7 @@
 .detail__value--accent {
   @include font-params-mobile(14px, 20px);
   width: fit-content;
+  min-width: 90px;
   padding: 0;
   border: none;
 
