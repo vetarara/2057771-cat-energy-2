@@ -17,6 +17,13 @@
 }
 
 .main-footer__map {
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-row: 1 / 4;
     grid-column: 1 / 5;
