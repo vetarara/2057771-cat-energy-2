@@ -15,10 +15,32 @@
   padding: 12px;
   font-family: $secondary-font;
   text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
 
   &::placeholder {
     color: $secondary-color;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus-visible {
+    border-color: $secondary-color;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: #eeeeee;
+    cursor: not-allowed;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    border-color: #ff8282;
+  }
+
+  &:not(:placeholder-shown):valid {
+    border-color: $accent-color;
   }
 
   @media (min-width: $tablet-width) {

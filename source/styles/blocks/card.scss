@@ -39,6 +39,15 @@
   place-self: center center;
   text-align: center;
 
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 2px;
   }

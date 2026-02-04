@@ -117,11 +117,23 @@
     right: 8px;
     display: block;
     width: 24px;
-    height: 12px;
+    height: 10px;
     mask-image: url("../../icons/stack.svg#link-arrow");
-    mask-size: 24px 12px;
+    mask-size: 24px 10px;
     mask-repeat: no-repeat;
     background-color: $primary-color;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    right: 0;
+    width: 32px;
+    mask-image: url("../../icons/stack.svg#link-arrow-active");
+    mask-size: 32px 10px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
