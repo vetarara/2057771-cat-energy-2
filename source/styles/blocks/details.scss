@@ -16,13 +16,8 @@
   }
 }
 
-.details__item {
-  max-width: 124px;
-}
-
 .details__item--accent {
   margin: 0 auto;
-  max-width: none;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 auto;
