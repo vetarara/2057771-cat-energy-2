@@ -6,7 +6,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     gap: 43px;
-    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,8 +16,13 @@
   }
 }
 
+.details__item {
+  max-width: 124px;
+}
+
 .details__item--accent {
   margin: 0 auto;
+  max-width: none;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 auto;

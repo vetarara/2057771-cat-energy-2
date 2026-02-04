@@ -1,6 +1,7 @@
 .detail {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .detail--accent {
@@ -11,6 +12,7 @@
     flex-direction: column;
     align-items: end;
     gap: 9px;
+    flex-shrink: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,6 +84,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-params-mobile(20px, 20px);
+    padding-top: 11px;
   }
 
   @media (min-width: $desktop-width) {
