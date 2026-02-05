@@ -19,17 +19,27 @@ ymaps.ready(init);
 
 function init() {
   const mapContainer = document.getElementById('map');
-
   mapContainer.classList.remove('map--nojs');
   mapContainer.innerHTML = '';
 
+  const placemarkCoordinations = [59.938631, 30.323037];
+
+  // Функция для центра карты
+  const getCenter = () => {
+    if (window.innerWidth >= 1280) {
+      return [59.938631, 30.3145];
+    } else {
+      return [59.938631, 30.323037];
+    }
+  };
+
   const map = new ymaps.Map('map', {
-    center: [59.938631, 30.323037],
+    center: getCenter(),
     zoom: 15
   });
 
   const placemark = new ymaps.Placemark(
-    [59.938631, 30.323037],
+    placemarkCoordinations,
     {},
     {
       iconLayout: 'default#image',
@@ -40,4 +50,11 @@ function init() {
   );
 
   map.geoObjects.add(placemark);
+
+  window.addEventListener('resize', () => {
+    map.setCenter(getCenter());
+    placemark.geometry.setCoordinates(placemarkCoordinations);
+    map.container.fitToViewport();
+  });
 }
+
