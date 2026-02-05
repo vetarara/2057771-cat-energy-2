@@ -3,22 +3,29 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     padding: 45px 30px 101px;
     background-color: $base-light;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-    background-color: transparent;
 
     &::after {
       content: "";
       position: absolute;
       left: 0;
-      top: 136px;
+      bottom: 0;
       width: 100%;
-      height: calc(100% - 136px);
+      height: 462;
       background-color: #f2f2f2;
+      z-index: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    background-color: transparent;
+
+    &::after {
+      top: 136px;
+      height: calc(100% - 136px);
       z-index: -1;
     }
   }
