@@ -69,10 +69,6 @@ const imgAfter = slider.querySelector('.slider__image--after');
 
 let isDragging = false;
 
-function getSliderWidth() {
-  return slider.offsetWidth;
-}
-
 function updateSlider(x) {
   const rect = slider.getBoundingClientRect();
   let offsetX = x - rect.left;
