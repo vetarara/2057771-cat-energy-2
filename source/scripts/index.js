@@ -22,7 +22,7 @@ function init() {
   mapContainer.classList.remove('map--nojs');
   mapContainer.innerHTML = '';
 
-  const placemarkCoordinations = [59.938631, 30.323037];
+  const placemarkCoordinates = [59.938631, 30.323037];
 
   // Функция для центра карты
   const getCenter = () => {
@@ -39,11 +39,11 @@ function init() {
   });
 
   const placemark = new ymaps.Placemark(
-    placemarkCoordinations,
+    placemarkCoordinates,
     {},
     {
       iconLayout: 'default#image',
-      iconImageHref: '../images/map-pin.png',
+      iconImageHref: '../images/map/map-pin.png',
       iconImageSize: [113, 106],
       iconImageOffset: [-55, -100]
     }
@@ -53,7 +53,7 @@ function init() {
 
   window.addEventListener('resize', () => {
     map.setCenter(getCenter());
-    placemark.geometry.setCoordinates(placemarkCoordinations);
+    placemark.geometry.setCoordinates(placemarkCoordinates);
     map.container.fitToViewport();
   });
 }
