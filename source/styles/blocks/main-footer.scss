@@ -41,6 +41,10 @@
 .main-footer__social {
   @include list-reset;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(6%);
+  }
 }
 
 .main-footer__links {
@@ -51,6 +55,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    padding: 56px 30px;
     flex-direction: row;
     align-items: center;
   }

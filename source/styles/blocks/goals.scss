@@ -17,7 +17,14 @@
 }
 
 .goals__item {
+  min-height: 266px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+  }
+
   @media (min-width: $desktop-width) {
+    min-height: 374px;
     max-width: calc(50% - 40px);
   }
 }

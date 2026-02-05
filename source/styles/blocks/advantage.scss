@@ -16,7 +16,7 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      top: 40;
+      top: 32px;
       width: 80px;
       height: 80px;
     }
@@ -26,7 +26,7 @@
       content: counter(item);
       counter-increment: item;
       position: absolute;
-      top: 0;
+      top: -8;
       right: 79px;
       z-index: -1;
       font-family: $secondary-font;
@@ -38,6 +38,16 @@
     &::after {
       right: 0;
     }
+  }
+}
+
+.advantage:first-child::after {
+  @media (min-width: $tablet-width) {
+    right: 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 20px;
   }
 }
 
@@ -66,10 +76,10 @@
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
-    padding: 151px 79px 0 0;
+    padding: 143px 79px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 151px 0 0;
+    padding: 143px 0 0;
   }
 }
