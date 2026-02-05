@@ -5,7 +5,7 @@
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
-    gap: 9px;
+    gap: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,6 +28,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    @include font-params-tablet($font-size: 18px);
     padding: 12px 2px;
     border: none;
 
@@ -39,6 +40,10 @@
       opacity: 0.3;
       color: $primary-color;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-params-tablet(20px, 20px);
   }
 }
 

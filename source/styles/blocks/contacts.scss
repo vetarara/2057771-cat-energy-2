@@ -9,6 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 60px 80px;
     background-color: $base-light;
   }
 }
@@ -40,5 +41,9 @@
     @include font-params-tablet($line-height: 20px);
     gap: 20px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }

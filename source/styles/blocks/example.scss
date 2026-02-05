@@ -20,12 +20,12 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    padding-bottom: 0;
     background-color: transparent;
 
     &::after {
       top: 180px;
-      height: calc(100% - 286px);
+      height: calc(100% - 108px);
       z-index: -1;
     }
   }
@@ -69,6 +69,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
     margin-bottom: 69px;
+    margin-right: 4px;
   }
 }
 
