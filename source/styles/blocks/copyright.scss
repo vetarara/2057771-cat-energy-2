@@ -3,7 +3,7 @@
   @include font-params-mobile(16px, 20px);
   position: relative;
   width: 100%;
-  padding: 8px;
+  padding: 8px 0;
   color: $secondary-color;
   text-transform: none;
 
@@ -31,6 +31,10 @@
   &:active,
   &:active::after {
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 6px;
   }
 }
 

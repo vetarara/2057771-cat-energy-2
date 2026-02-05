@@ -9,6 +9,7 @@
   @media (min-width: $desktop-width) {
     padding-right: 0;
     padding-top: 55px;
+    align-items: center;
   }
 }
 
@@ -29,7 +30,7 @@
   @media (max-width: $mobile-width-only) {
     position: absolute;
     z-index: 2;
-    top: 13px;
-    right: 21px;
+    top: 12px;
+    right: 14px;
   }
 }
