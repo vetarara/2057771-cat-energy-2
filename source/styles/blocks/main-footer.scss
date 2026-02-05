@@ -45,6 +45,10 @@
   @media (min-width: $tablet-width) {
     transform: translateX(6%);
   }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(20px, -1px);
+  }
 }
 
 .main-footer__links {
@@ -63,7 +67,8 @@
   @media (min-width: $desktop-width) {
     grid-row: 4 / 5;
     grid-column: 1 / 5;
-    width: 1220px;
+    padding: 68px 30px;
+    width: 1280px;
     justify-self: center;
   }
 }

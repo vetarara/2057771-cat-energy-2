@@ -4,8 +4,8 @@
   gap: 20px 32px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    gap: 43px;
+    grid-template-columns: 23% 23% 42%;
+    gap: 20px 42px;
   }
 
   @media (min-width: $desktop-width) {

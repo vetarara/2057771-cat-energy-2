@@ -17,3 +17,9 @@
     padding-bottom: 71px;
   }
 }
+
+.cards__item {
+  @media (min-width: $tablet-width) {
+    min-height: 511px;
+  }
+}

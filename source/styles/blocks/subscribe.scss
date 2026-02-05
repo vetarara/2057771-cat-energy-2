@@ -14,6 +14,7 @@
   @include font-params-mobile(24px, 24px);
   position: relative;
   margin: 0 0 32px;
+  max-width: 80%;
   width: fit-content;
   font-family: $secondary-font;
   font-weight: $base-font-weight;
@@ -25,6 +26,7 @@
   @media (min-width: $tablet-width) {
     @include font-params-tablet(32px, 32px);
     margin-bottom: 66px;
+    max-width: 90%;
     padding-left: 40px;
     box-shadow:
       0 0 0 0 $base-light,

@@ -6,28 +6,30 @@
   &::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 20px;
     display: block;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 52px 53px;
+    padding: 71px 52px 67px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 60px 55px 52px;
+    padding: 77px 60px 61px 52px;
   }
 }
 
 .goal--slim::before {
+  top: 22px;
+  left: 20px;
   width: 50px;
   height: 53px;
   background-image: url("../../icons/stack.svg#cat-slim");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    top: 81px;
+    top: 74px;
     right: 63px;
     left: auto;
     width: 200px;
@@ -44,13 +46,14 @@
 }
 
 .goal--pro::before {
-  left: 10px;
+  top: 23px;
+  left: 11px;
   width: 70px;
   height: 50px;
   background-image: url("../../icons/stack.svg#cat-pro");
 
   @media (min-width: $tablet-width) {
-    top: 91px;
+    top: 86px;
     right: 29px;
     left: auto;
     width: 268px;
@@ -68,7 +71,7 @@
 
 .goal__title {
   @include font-params-mobile(24px, 37px);
-  margin: 0 0 29px 70px;
+  margin: 10px 0 30px 70px;
   font-family: $secondary-font;
   font-weight: $base-font-weight;
   text-transform: uppercase;
@@ -86,14 +89,13 @@
 .goal__description {
   color: $secondary-color;
   margin: 0;
-  margin-bottom: 15px;
-  padding-bottom: 23px;
+  margin-bottom: 19px;
+  padding-bottom: 21px;
   border-bottom: 2px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
     padding: 0;
-    max-width: 45vw;
+    max-width: 44vw;
     border: none;
   }
 
@@ -138,6 +140,9 @@
 
   @media (min-width: $tablet-width) {
     @include font-params-tablet(20px, 20px);
+    align-self: end;
+    width: fit-content;
+    height: fit-content;
     padding-right: 57px;
 
     &::after {
