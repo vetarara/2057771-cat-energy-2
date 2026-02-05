@@ -1,11 +1,39 @@
 .slider {
   position: relative;
+  place-content: center;
+  min-height: 256px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 512px;
+  }
+}
+
+.slider__image--before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: inset(0 50% 0 0);
+  z-index: 1;
+}
+
+.slider__image--after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: inset(0 0 0 50%);
+  z-index: 1;
 }
 
 .slider__curtain {
   position: absolute;
   top: 0;
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 4px;
   height: 100%;
   padding: 0;
@@ -13,6 +41,7 @@
   border: none;
   border-radius: 2px;
   cursor: pointer;
+  z-index: 2;
 
   &::before {
     content: "";
@@ -41,5 +70,25 @@
     mask-image: url("../../icons/stack.svg#slider-arrows");
     mask-size: 24px 18px;
     mask-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    border-color: $accent-color;
+  }
+
+
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: $accent-color;
   }
 }
