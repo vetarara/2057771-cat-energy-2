@@ -133,4 +133,3 @@ if (slider) {
     imgAfter.style.clipPath = `inset(0 0 0 ${100 - percent}%)`;
   });
 }
-
