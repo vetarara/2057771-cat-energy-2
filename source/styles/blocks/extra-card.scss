@@ -11,6 +11,11 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  &:last-child {
+    padding-bottom: 19px;
+    border-bottom: 1px solid #d9d9d9;
+  }
 }
 
 .extra-card__title {
@@ -29,7 +34,7 @@
 
 .extra-card__description {
   @include font-params-mobile($line-height: 14px);
-  margin-bottom: 15px;
+  margin: 0 0 15px;
   display: flex;
   justify-content: space-between;
   color: $secondary-color;

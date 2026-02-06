@@ -1,5 +1,5 @@
 .subscribe {
-  padding: 20px;
+  padding: 20px 20px 40px;
 
   @media (min-width: $tablet-width) {
     padding: 0 68px 80px;
@@ -13,7 +13,7 @@
 .subscribe__title {
   @include font-params-mobile(24px, 24px);
   position: relative;
-  margin: 0 0 32px;
+  margin: 0 0 33px;
   max-width: 80%;
   width: fit-content;
   font-family: $secondary-font;
