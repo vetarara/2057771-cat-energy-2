@@ -15,7 +15,7 @@
 </head>
 
 <body class="page__body">
-  <!-- <img class="pp-image" src="images/pp/tablet-index.png" alt="изображение страницы"> -->
+  <!-- <img class="pp-image" src="images/pp/desktop-index.png" alt="изображение страницы"> -->
 
   <header class="page__header main-header">
 
@@ -112,20 +112,26 @@
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
 
-        <dl class="example__details details">
-          <div class="details__item detail">
-            <dt class="detail__value">5 кг</dt>
-            <dd class="detail__key">Снижение веса</dd>
-          </div>
-          <div class="details__item detail">
-            <dt class="detail__value">60 дней</dt>
-            <dd class="detail__key">Затрачено времени</dd>
-          </div>
-          <div class="details__item detail details__item--accent detail--accent">
-            <dt class="detail__value detail__value--accent">15 000 руб.</dt>
-            <dd class="detail__key detail__key--accent">Затраты на питание:</dd>
-          </div>
-        </dl>
+        <div class="example__details-wrapper">
+          <dl class="example__details-primary details-primary">
+            <div class="details-primary__item">
+              <dt class="details-primary__value">5 кг</dt>
+              <dd class="details-primary__key">Снижение веса</dd>
+            </div>
+            <div class="details-primary__item">
+              <dt class="details-primary__value">60 дней</dt>
+              <dd class="details-primary__key">Затрачено времени</dd>
+            </div>
+          </dl>
+
+          <dl class="example__details-secondary details-secondary">
+            <div class="details-secondary__item">
+              <dt class="details-secondary__value">15 000 руб.</dt>
+              <dd class="details-secondary__key">Затраты на питание:</dd>
+            </div>
+          </dl>
+
+        </div>
 
         <div class="example__slider slider">
           <picture class="slider__wrapper-before">
