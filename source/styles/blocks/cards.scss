@@ -13,7 +13,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 245px);
-    gap: 80px;
+    gap: 63px 80px;
     padding-bottom: 71px;
   }
 }
