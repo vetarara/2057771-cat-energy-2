@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 26px 38px 0;
-    align-items: center;
+    gap: 11px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,6 +15,11 @@
   &:last-child {
     padding-bottom: 19px;
     border-bottom: 1px solid #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
   }
 }
 
@@ -27,6 +32,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    @include font-params-tablet(20px, 20px);
     margin-top: 0;
     grid-column: 1 / 2;
   }
@@ -40,6 +46,8 @@
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
+    @include font-params-tablet($line-height: 20px);
+    margin: 1px 2px 0 0;
     grid-column: 2 / 3;
     gap: 50px;
     justify-content: end;
