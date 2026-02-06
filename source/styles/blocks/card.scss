@@ -10,7 +10,7 @@
     padding: 10px 37px 40px;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 10px;
     justify-content: space-between;
     border: none;
 
@@ -46,10 +46,6 @@
   &:active {
     opacity: 0.6;
   }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 2px;
-  }
 }
 
 .card__title {
@@ -64,8 +60,8 @@
 
   @media (min-width: $tablet-width) {
     @include font-params-tablet($font-size: 20px);
-    margin: 0 auto auto;
-    max-width: 42%;
+    margin: 0 auto;
+    max-width: 52%;
     text-align: center;
   }
 
@@ -101,6 +97,7 @@
   @media (min-width: $tablet-width) {
     @include font-params-tablet($line-height: 20px);
     border-bottom: 1px solid #cdcdcd;
+    padding: 4px 0 6px;
   }
 }
 
@@ -108,13 +105,13 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 4px 0;
+    // padding: 4px 0;
   }
 }
 
 .card__key {
   @media (min-width: $tablet-width) {
-    padding: 4px 0;
+    // padding: 4px 0;
   }
 }
 
@@ -141,7 +138,6 @@
     padding-bottom: 40px;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
     justify-content: space-between;
 
     &::after {
@@ -191,17 +187,17 @@
   @media (min-width: $tablet-width) {
     margin: 0 auto 3px;
     max-width: 70%;
-    padding-top: 238px;
+    padding-top: 232px;
     border: none;
 
     &::before {
       width: 60px;
-      top: 161px;
+      top: 152px;
     }
 
     &::after {
       height: 60px;
-      top: 131px;
+      top: 122px;
     }
   }
 

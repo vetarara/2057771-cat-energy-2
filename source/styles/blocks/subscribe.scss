@@ -2,7 +2,7 @@
   padding: 20px 20px 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 68px 80px;
+    padding: 0 30px 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,12 +61,18 @@
 
   @media (min-width: $tablet-width) {
     @include font-params-tablet(24px, 32px);
+    margin: 0 auto 24px;
+    max-width: 90%;
   }
 }
 
 .subscribe__form {
+  @media (min-width: $tablet-width) {
+    max-width: 89%;
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 752px;
-    margin: 0 auto;
   }
 }
