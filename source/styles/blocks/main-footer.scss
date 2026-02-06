@@ -43,7 +43,8 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    transform: translateX(6%);
+    transform: translateX(16%);
+    width: fit-content;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,8 +61,9 @@
 
   @media (min-width: $tablet-width) {
     padding: 56px 30px;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
