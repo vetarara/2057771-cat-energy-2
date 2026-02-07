@@ -23,6 +23,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   text-align: center;
+  hyphens: auto;
 
   @media (min-width: $tablet-width) {
     @include font-params-tablet(30px, 37px);

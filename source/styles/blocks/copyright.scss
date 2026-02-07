@@ -3,7 +3,7 @@
   @include font-params-mobile(16px, 20px);
   position: relative;
   width: 100%;
-  padding: 8px 0;
+  padding: 8px 33px 0 0;
   color: $secondary-color;
   text-transform: none;
 
@@ -34,7 +34,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 7px 6px;
+    padding: 7px 33px 7px 6px;
   }
 }
 
